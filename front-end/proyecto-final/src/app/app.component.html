@@ -1,5 +1,62 @@
-<table>
-  <tr>
-    <td>{{mensaje}}</td>
-  </tr>
-</table>
+<div class="container-fluid">
+  <div class="row mt-3">
+    <div class="col-12">
+      Bienvenido prueba final programación 3
+
+      <div class="row my-4">
+        <div class="col-12">
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title">
+                Formulario de ingreso
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <label for="exampleInputEmail1"  class="form-label">Nombre</label>
+                  <input type="text" class="form-control" [(ngModel)]="persona.nombre" name="nombre">
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-4">
+                  <button class="btn btn-primary" (click)="ingresaPersona()">
+                    Ingresar persona
+                  </button>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row">
+                <div class="col-12">
+                  <table class="table table-hover table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let p of personas">
+                        <td>{{p.nombre}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        Cinthia Marleni Urias Lopez
+      </div>
+      
+    </div>
+  </div>
+</div>
